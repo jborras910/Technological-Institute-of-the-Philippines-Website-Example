@@ -1,0 +1,513 @@
+@media screen and (max-width: 1000px) {
+    .header-container,
+    .hearder-item-1,
+    .hearder-item-2,
+    .footer-bottom {
+        flex-direction: column;
+        padding: 10px;
+        margin: 0 auto;
+        text-align: center;
+    }
+    .container-fluid {
+        flex-direction: column;
+    }
+    .footer-container {
+        flex-direction: column;
+    }
+}
+
+.hearder-item-1,
+.container-fluid,
+.Lists {
+    position: relative;
+    animation-name: left;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+
+.hearder-item-2,
+.nav-link,
+.Content {
+    position: relative;
+    animation-name: right;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+
+.Content div {
+    position: relative;
+    animation-name: fadeOut;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+
+.banner {
+    position: relative;
+    animation-name: top;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+
+{
+    position: relative;
+    animation-name: bottom;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+
+hr.new7 {
+    position: relative;
+    animation-name: hr;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes fadeOut {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes hr {
+    0% {
+        width: 0%;
+    }
+    100% {
+        width: 100%;
+    }
+}
+
+@keyframes rotate {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes lighting {
+    0% {
+        width: 0%;
+    }
+    50% {
+        background-color: #fff;
+    }
+    100% {
+        width: 100%;
+    }
+}
+
+@keyframes right {
+    0% {
+        right: -1000px;
+    }
+    100% {
+        right: 0;
+    }
+}
+
+@keyframes left {
+    0% {
+        left: -1000px;
+    }
+    100% {
+        left: 0;
+    }
+}
+
+@keyframes top {
+    0% {
+        top: -1000px;
+    }
+    100% {
+        top: 0;
+    }
+}
+
+@keyframes bottom {
+    0% {
+        bottom: -1000px;
+    }
+    100% {
+        bottom: 0;
+    }
+}
+
+
+/*----Keyframe/end----*/
+
+
+/*----Header----*/
+
+.header-container {
+    width: 100%;
+    display: flex;
+    padding: 10px;
+    justify-content: space-around;
+    align-items: flex-start;
+    background-image: url(https://tip.edu.ph/themes/custom/images/admission-upper-right.png);
+    background-repeat: no-repeat, repeat;
+    background-position: top right;
+}
+
+.hearder-item-1 {
+    padding: 5px;
+    display: flex;
+    align-items: center;
+}
+
+.hearder-item-1 img {
+    width: 120px;
+    padding: 5px;
+    height: auto;
+}
+
+.hearder-item-1 h4 a {
+    text-decoration: none;
+    font-family: "Times New Roman", Times, serif;
+    font-weight: 900;
+    color: #1e1e1e;
+    text-shadow: 0px 3px #fae80e!important;
+    margin-bottom: 0px;
+}
+
+.hearder-item-1 h6 {
+    margin-left: 3px;
+    margin-top: 0px;
+}
+
+.hearder-item-1 h4 {
+    margin-bottom: 0px;
+}
+
+.hearder-item-1 h6 {
+    margin-top: 0px;
+}
+
+.hearder-item-2 {
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.backtop {
+    float: right;
+}
+
+.hearder-item-2 a,
+.backtop {
+    padding: 0 10px;
+    margin: 0 auto;
+    color: #1e1e1e;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.hearder-item-2 a:hover,
+.backtop:hover {
+    transition: 0.8;
+    text-decoration: none;
+    color: #1e1e1e;
+    text-shadow: 2px 2px #fae80e!important;
+    border-bottom: 2px solid #1e1e1e;
+}
+
+
+/*----Header/end----*/
+
+
+/*----Navigation----*/
+
+.navbar {
+    background-color: #1e1e1e;
+    text-decoration: none;
+    border-top: 5px solid #fae80e!important;
+    border-bottom: 3px solid #fae80e!important;
+    box-shadow: 0 6px 5px rgba(0, 0, 0, .9)
+}
+
+.navbar-nav {
+    margin: 0 auto;
+    justify-content: space-between;
+}
+
+.nav-link {
+    color: #fae80e!important;
+    font-weight: 600;
+    font-size: 15px;
+    margin: 5px;
+}
+
+.actived {
+    color: white!important;
+    text-shadow: 0px 1px #fae80e;
+}
+
+.nav-link:hover {
+    color: white!important;
+    text-shadow: 0px 1px #fae80e;
+    transition: 0.2s;
+    transform: translate(0, -2px);
+}
+
+.navbar-toggler {
+    background-color: #fae80e!important;
+    width: 25%;
+    box-shadow: 0 6px 5px rgba(0, 0, 0, .9)
+}
+
+.navbar-toggler:hover {
+    background-color: #fff!important;
+    transition: 0.2s;
+}
+
+
+/*----Navigation/end----*/
+
+.banner {
+    width: 100%;
+    margin: 0 auto;
+    border-bottom: 5px solid #fae80e!important;
+    margin-bottom: 10px;
+    box-shadow: 0 6px 5px rgba(0, 0, 0, .9)
+}
+
+.main-container {
+    background-image: url(https://tip.edu.ph/themes/custom/images/abet-lower-left.png);
+    background-repeat: no-repeat, repeat;
+    background-position: bottom left;
+}
+
+.main-container img {
+    width: 100%;
+    margin: 0 auto;
+    border-bottom: 5px solid #fae80e!important;
+    margin-bottom: 10px;
+}
+
+.Lists {
+    padding: 15px;
+    width: 100%;
+}
+
+.Lists div {
+    margin-bottom: 15px;
+    box-shadow: 0 6px 5px rgba(0, 0, 0, .5)
+}
+
+.Lists div:nth-child(odd) {
+    background-color: #d4d9ce
+}
+
+.Lists div:nth-child(even) {
+    background-color: #f6ff45
+}
+
+.Lists h6 {
+    padding: 20px;
+    width: 100%;
+    margin-bottom: 0px;
+    cursor: pointer;
+    font-weight: 600;
+    text-align: left;
+    font-size: 20px;
+    border-radius: 0px;
+}
+
+.Lists h6:hover {
+    background-color: #424242;
+    color: #fae80e!important;
+    transition: 1s;
+}
+
+.Content {
+    margin: 5px auto;
+    padding-top: 15px;
+    font-weight: 600;
+}
+
+.Content div {
+    border-bottom: 2px solid #1e1e1e;
+    margin-bottom: 20px;
+}
+
+.Content div a {
+    color: black;
+}
+
+.Content div a:hover {
+    color: #fae80e;
+    text-decoration: none;
+    transition: 1s;
+}
+
+.Content p,
+.Content h5 {
+    padding-left: 10px;
+}
+
+.Content img {
+    width: 100%;
+    padding: 10px;
+}
+
+.Content h4 {
+    border-bottom: 2px solid #1e1e1e;
+}
+
+#tab-1-content,
+#tab-2-content,
+#tab-3-content,
+#tab-4-content,
+#tab-5-content,
+#tab-6-content,
+#tab-7-content {
+    display: none;
+}
+
+.show {
+    display: block !important;
+}
+
+
+/*----Footer----*/
+
+.footer-container {
+    width: 100%;
+    background-color: #1e1e1e;
+    color: #fff;
+    padding: 20px;
+    display: flex;
+    justify-content: space-around;
+    border-top: 5px solid #fae80e;
+    box-shadow: 0 6px 5px rgba(0, 0, 0, .9)
+}
+
+.footer-container h5 {
+    margin: 10px 0px;
+    font-weight: 500;
+    color: #fae80e;
+    text-shadow: 0px 1px #fff;
+    font-family: "Times New Roman", Times, serif;
+}
+
+.footer-container h6 {
+    margin-top: 10px;
+    font-weight: 600;
+    margin-bottom: 0px;
+}
+
+.footer-item {
+    width: 100%;
+    padding: 20px;
+    box-shadow: 0px 6px 5px rgba(0, 0, 0, .2)
+}
+
+.footer-item img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 16px;
+    border-radius: 10px;
+    border: 1px solid grey;
+}
+
+.footer-item p {
+    margin-bottom: 3px;
+}
+
+.socialicnos {
+    display: flex;
+    padding: 10px;
+    margin-top: 0px;
+}
+
+.footer-bottom {
+    display: flex;
+    padding: 10px;
+    background-color: #0c0c0c;
+    color: #fff;
+    justify-content: space-around;
+}
+
+
+/*----Footer/end----*/
+
+
+/*----hr----*/
+
+hr.new4 {
+    border: 1px solid #1e1e1e;
+    margin-top: 0px;
+    margin-bottom: 6px;
+}
+
+hr.new5 {
+    border: 1px solid #1e1e1e;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+hr.new6 {
+    margin-top: 6px;
+    border: 1px solid #1e1e1e;
+}
+
+hr.new7 {
+    border: 1px solid grey;
+    margin-top: 0px;
+}
+
+
+/*----Social icons----*/
+
+.fa-facebook:hover,
+.fa-twitter:hover,
+.fa-google:hover,
+.fa-youtube:hover,
+.fa-instagram:hover {
+    text-decoration: none;
+    color: #1e1e1e;
+    background-color: white;
+    transition: 2s;
+}
+
+.fa-facebook,
+.fa-twitter,
+.fa-google,
+.fa-youtube,
+.fa-instagram {
+    padding: 10px;
+    width: 40px;
+    font-size: 90px;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 5px;
+    border-radius: 30%;
+    box-shadow: 0px 6px 5px rgba(0, 0, 0, .2)
+}
+
+.fa {
+    padding: 10px;
+}
+
+.socialicnos a {
+    border-radius: 50%;
+    background-color: #fae806;
+    color: black;
+    border: 2px solid grey;
+}
+
+.socialicnos a:hover {
+    background-color: #1e1e1e;
+    color: #fae806;
+    transition: 2s;
+    border: 2px solid #fae806;
+}
+
+
+/*----Social icon/end----*/
